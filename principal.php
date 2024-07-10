@@ -9,7 +9,9 @@
 <body class="principalBody">
     <header class="headerPrincipal">
         <h2>Gestor Incidencias</h2>
-        <p>Hola Lucas Massazza</p>
+        <?php
+            include 'obtencion_nombre.php';
+        ?>
         <nav class="nav-links">
             <?php
                 include 'header.php';
@@ -22,7 +24,10 @@
             <thead>
                 <tr>
                     <th>Numero Incidente</th>
-                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Mail</th>
+                    <th>Resumen</th>
                     <th>Fecha Creacion</th>
                     <th>Descripcion</th>
                 </tr>

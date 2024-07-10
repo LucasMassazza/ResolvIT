@@ -13,6 +13,11 @@
   color: red;
   font-weight: bolder; }
 
+.mensajeNotificacion {
+  font-size: 1.2em;
+  color: aqua;
+  font-weight: bolder; }
+
 .fontMediana {
   font-size: 1.2em; }
 
@@ -21,6 +26,27 @@
 
 .fontGrande {
   font-size: 1.5em; }
+
+.botonLogin {
+  padding: 5px;
+  width: auto;
+  min-width: 100px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.fontAclaratoria {
+  opacity: 0.9;
+  color: #3d3d3d;
+  font-size: 0.8em; }
+
+.bordeRedondeado {
+  border: 1px solid black;
+  border-radius: 3px; }
+
+.marginBottom20px {
+  margin-bottom: 20px; }
 
 .bodyLogin {
   height: 75vh;
@@ -45,11 +71,6 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-around; }
-      .bodyLogin .formularioLogin .botonesLogin .botonLogin {
-        padding: 5px;
-        width: auto;
-        min-width: 100px;
-        text-align: center; }
 
 .principalBody {
   display: flex;
@@ -127,16 +148,47 @@
   .bodyRegistro form {
     display: flex;
     flex-direction: column;
-    width: 30%; }
+    margin-top: 50px;
+    align-items: center; }
+    .bodyRegistro form div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 300px; }
+      .bodyRegistro form div input {
+        width: 70%; }
+    .bodyRegistro form input {
+      width: 100px; }
+    .bodyRegistro form .botonRegistrarse {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 3px; }
 
-.grupoFila {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .grupoFila .grupoAgrupado {
-    flex: 1;
-    margin-right: 10px; }
-    .grupoFila .grupoAgrupado:last-child {
-      margin-right: 0; }
-  .grupoFila .full-width {
-    flex: 1 0 100%; }
+.bodyCrearIncidente {
+  text-align: center; }
+  .bodyCrearIncidente h1 {
+    margin-top: 120px; }
+  .bodyCrearIncidente p {
+    margin-top: 5px; }
+  .bodyCrearIncidente form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .bodyCrearIncidente form input {
+      margin-top: 30px; }
+    .bodyCrearIncidente form .inputResumen {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      width: 350px;
+      height: fit-content; }
+    .bodyCrearIncidente form textarea {
+      margin-top: 15px;
+      resize: none;
+      overflow: auto;
+      width: 350px;
+      height: 300px;
+      padding: 10px; }

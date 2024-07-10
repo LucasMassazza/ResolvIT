@@ -1,11 +1,11 @@
 <?php
-    error_reporting(E_ALL ^ E_WARNING);
+    session_start();
+    error_reporting(1);
     include 'conexion_mysql.php';
-    $resultado = mysqli_query($conn,"SELECT * FROM incidente");
+    $name = $_SESSION['nombre'];
+    $resultado = mysqli_query($conn,"SELECT idIncidente, nombre, apellido, mail, resumen, fecha_creacion, descripcion FROM incidente WHERE nombre='$name'");
+    $tabla = mysqli_fetch_assoc($resultado);
+    //  foreach ($tabla as $key => $value) {
+    //      echo $value.'<br>';
+    // }
 
-    if($result->num_rows>0){
-        while($fila=$resultado->fetch_assoc()){
-            $incidentes[] = $fila;
-        }
-    }
-?>

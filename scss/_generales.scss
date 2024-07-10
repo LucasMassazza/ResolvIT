@@ -3,7 +3,11 @@
     color: red;
     font-weight: bolder;
 }
-
+.mensajeNotificacion{
+    font-size: 1.2em;
+    color: aqua;
+    font-weight: bolder;
+}
 .fontMediana{
     font-size: 1.2em;
 }
@@ -12,4 +16,25 @@
 }
 .fontGrande{
     font-size: 1.5em;
+}
+.botonLogin{
+    padding: 5px;
+    width: auto;
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fontAclaratoria{
+    opacity: 0.9;
+    color: #3d3d3d;
+    font-size: 0.8em;
+}
+.bordeRedondeado{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.marginBottom20px{
+    margin-bottom: 20px;
 }
