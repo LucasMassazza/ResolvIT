@@ -89,3 +89,4 @@ __pycache__/
 .yarn/
 .pnp.*
 package.json
+package-lock.json

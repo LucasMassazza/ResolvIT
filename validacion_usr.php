@@ -12,6 +12,6 @@
         header("Location: principal.php");
     }else{
         include("index.php");
-        echo "<p class='mensaje_error'>Contraseña o Usuario Incorrecto</p>";
+        echo "<p class='mensajeError'>Contraseña o Usuario Incorrecto</p>";
     }
 ?>

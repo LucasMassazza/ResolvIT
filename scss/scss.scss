@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+@import '_generales.scss';
+@import '_index.scss';
+@import '_principal.scss';
+@import '_headerPrincipal.scss';
+@import '_mainPrincipal.scss';
+@import '_headerHorizontal.scss';
+@import '_registro.scss';

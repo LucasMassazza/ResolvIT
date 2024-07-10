@@ -1,0 +1,13 @@
+.principalBody{
+    display: flex;
+    height: 100vh;
+    header{
+        border-right: 3px black solid;
+        width: 15%;
+        height: 100%;
+        min-width: 280px;
+    }
+    main{
+        width:100%;
+    }
+}
