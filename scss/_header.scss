@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    .headerDiv{
+        width: 90%;
+        height: 60px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        span{
+            height: 45px;
+            border-color: rgb(141, 141, 141);
+            margin-left: 20px;
+            width: 2px;
+        }
+        .titulo{
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            li:first-child{
+                margin-right: 65px;
+            }
+        }
+        img{
+            height: 50px;
+            width: auto;
+            padding-right: 25px;
+        }
+    }
+}

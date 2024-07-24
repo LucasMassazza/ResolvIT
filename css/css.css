@@ -1,11 +1,11 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
   color: black;
-  background-color: goldenrod;
+  background-color: #e9e4d8;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .mensajeError {
@@ -27,6 +27,9 @@
 .fontGrande {
   font-size: 1.5em; }
 
+.fontChica {
+  font-size: 0.8em; }
+
 .botonLogin {
   padding: 5px;
   width: auto;
@@ -47,6 +50,73 @@
 
 .marginBottom20px {
   margin-bottom: 20px; }
+
+.border {
+  border: 1px solid black; }
+
+.nombre {
+  display: flex;
+  flex-direction: row;
+  margin-right: 80px; }
+  .nombre div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; }
+    .nombre div p:last-child {
+      margin-top: 3px; }
+
+.maxWidth {
+  max-width: 1820px; }
+
+.itemCatalogo {
+  width: 300px;
+  height: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; }
+  .itemCatalogo img {
+    width: 72px;
+    height: 72px;
+    margin-left: 20px; }
+  .itemCatalogo .itemCatalogoTexto {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px; }
+    .itemCatalogo .itemCatalogoTexto p:last-child {
+      padding-top: 5px; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black; }
+  .header .headerDiv {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .headerDiv span {
+      height: 45px;
+      border-color: #8d8d8d;
+      margin-left: 20px;
+      width: 2px; }
+    .header .headerDiv .titulo {
+      margin-left: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header .headerDiv nav {
+      display: flex; }
+      .header .headerDiv nav li:first-child {
+        margin-right: 65px; }
+    .header .headerDiv img {
+      height: 50px;
+      width: auto;
+      padding-right: 25px; }
 
 .bodyLogin {
   height: 75vh;
@@ -73,69 +143,23 @@
       justify-content: space-around; }
 
 .principalBody {
-  display: flex;
+  display: grid;
+  grid-template-rows: 70px 1fr;
   height: 100vh; }
-  .principalBody header {
-    border-right: 3px black solid;
-    width: 15%;
-    height: 100%;
-    min-width: 280px; }
-  .principalBody main {
-    width: 100%; }
-
-.headerPrincipal {
-  padding-left: 20px; }
-  .headerPrincipal h2 {
-    margin-top: 50px;
-    margin-bottom: 3px; }
-  .headerPrincipal p {
-    margin-bottom: 100px; }
-  .headerPrincipal nav {
-    width: 100%;
-    padding-left: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left; }
-    .headerPrincipal nav a {
-      margin-bottom: 20px;
-      font-size: 1.2em; }
 
 .mainPrincipal {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .mainPrincipal h1 {
-    margin-top: 8%;
-    margin-bottom: 7%; }
-  .mainPrincipal table {
-    width: 70%;
-    border-collapse: collapse;
-    /* Para fusionar los bordes de las celdas */ }
-  .mainPrincipal th, .mainPrincipal td {
-    border: 1px solid black;
-    /* Añade bordes a las celdas */
-    padding: 8px;
-    /* Añade espaciado interno */
-    text-align: left;
-    /* Alinea el texto a la izquierda */ }
-  .mainPrincipal th {
-    background-color: rgba(255, 255, 255, 0.288);
-    /* Color de fondo para las celdas de encabezado */ }
-
-.headerHorizontal {
-  height: 100px;
-  width: 100%;
-  border-bottom: 3px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .headerHorizontal div {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px; }
-  .headerHorizontal nav a {
-    margin-left: 20px;
-    margin-right: 20px; }
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25em; }
+  .mainPrincipal div {
+    display: flex; }
+    .mainPrincipal div a:nth-child(2) {
+      margin-left: 150px;
+      margin-right: 150px; }
+    .mainPrincipal div a {
+      margin-top: 80px; }
 
 .bodyRegistro {
   display: flex;

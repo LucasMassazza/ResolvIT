@@ -17,6 +17,9 @@
 .fontGrande{
     font-size: 1.5em;
 }
+.fontChica{
+    font-size: 0.8em;
+}
 .botonLogin{
     padding: 5px;
     width: auto;
@@ -37,4 +40,46 @@
 }
 .marginBottom20px{
     margin-bottom: 20px;
+}
+.border{
+    border: 1px solid black;
+}
+.nombre{
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    div{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        p:last-child{
+            margin-top: 3px;
+        }
+    }  
+}
+.maxWidth{
+    max-width: 1820px;
+}
+.itemCatalogo{
+    width: 300px;
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    img{
+        width: 72px;
+        height: 72px;
+        margin-left: 20px;
+    }
+    .itemCatalogoTexto{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        p:last-child{
+            padding-top: 5px;
+        }
+    }
 }

@@ -3,17 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
     color: black;
-    background-color: goldenrod;
+    background-color: #e9e4d8;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
 @import '_generales.scss';
+@import '_header.scss';
 @import '_index.scss';
 @import '_principal.scss';
-@import '_headerPrincipal.scss';
 @import '_mainPrincipal.scss';
-@import '_headerHorizontal.scss';
 @import '_registro.scss';
 @import '_creacionIncidente.scss'
