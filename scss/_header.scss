@@ -21,16 +21,28 @@
             justify-content: center;
             align-items: center;
         }
-        nav{
+        .headerNav{
             display: flex;
+            transition: transform 0.3s ease;
             li:first-child{
-                margin-right: 65px;
+                margin-right: 60px;
+            }
+            li{
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+            li:hover{
+                transform: scale(1.05);
+                color: orange !important;
             }
         }
-        img{
+        .imagenHeader{
             height: 50px;
             width: auto;
             padding-right: 25px;
+        }
+        .imagenLogout{
+            height: 35px;
+
         }
     }
 }

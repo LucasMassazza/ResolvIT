@@ -1,19 +1,26 @@
-<?php session_start()?>
-<header class="header">
+<?php 
+session_start();
+error_reporting(0);
+?>
+<header class="header colorFondoHeader">
     <div class="headerDiv maxWidth">
         <div class="titulo">
-            <img src="../images/apoyo-tecnico.png" alt="Logo">
+            <img class="imagenHeader" src="../../images/apoyo-tecnico.png" alt="Logo">
             <h3>Gestion de Incidentes y Solicitudes</h3>
             <span class="border"></span>
         </div>
-        <nav>
+        <nav class="headerNav">
             <?php include 'nav.php'?>
         </nav>
         <div class="nombre">
             <span class="border"></span>
             <div>
-                <?php include 'obtencionNombre.php' ?>
+                <?php 
+                    include 'obtencionNombre.php'; 
+                    include 'obtencionTipoUsuario.php';
+                ?>
             </div>
+            <a href="/php/usuario/cerrarSesion.php"><img class="imagenLogout" src="../../images/boton-salir-a-la-aplicacion.png" alt="Cerrar Sesion"></a>
         </div>
     </div>
 </header>

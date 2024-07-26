@@ -1,0 +1,33 @@
+.loading-container {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.dots {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dots::after {
+    content: '';
+    animation: dots 3s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80%, 100% {
+        content: '...';
+    }
+}

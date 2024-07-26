@@ -4,9 +4,22 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  color: black;
-  background-color: #e9e4d8;
+  color: whitesmoke;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+main {
+  background-color: #31363b; }
+
+header {
+  background-color: #101113; }
+
+.ocuparResto {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  height: 100vh; }
+
+.negrita {
+  font-weight: bolder; }
 
 .mensajeError {
   font-size: 1.2em;
@@ -15,7 +28,7 @@
 
 .mensajeNotificacion {
   font-size: 1.2em;
-  color: aqua;
+  color: #cab45c;
   font-weight: bolder; }
 
 .fontMediana {
@@ -37,7 +50,12 @@
   text-align: center;
   border: 1px solid black;
   border-radius: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: black; }
+
+.input {
+  color: black;
+  padding: 5px; }
 
 .fontAclaratoria {
   opacity: 0.9;
@@ -69,12 +87,14 @@
   max-width: 1820px; }
 
 .itemCatalogo {
-  width: 300px;
-  height: 135px;
+  background-color: #b97900;
+  transition: transform 0.3s ease;
+  width: 350px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px; }
+  border-radius: 10px; }
   .itemCatalogo img {
     width: 72px;
     height: 72px;
@@ -84,63 +104,70 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px; }
+    margin-right: 10px; }
+    .itemCatalogo .itemCatalogoTexto p {
+      color: black; }
     .itemCatalogo .itemCatalogoTexto p:last-child {
-      padding-top: 5px; }
+      padding-top: 5px;
+      font-size: 1em; }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid black; }
-  .header .headerDiv {
-    width: 90%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .header .headerDiv span {
-      height: 45px;
-      border-color: #8d8d8d;
-      margin-left: 20px;
-      width: 2px; }
-    .header .headerDiv .titulo {
-      margin-left: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .header .headerDiv nav {
-      display: flex; }
-      .header .headerDiv nav li:first-child {
-        margin-right: 65px; }
-    .header .headerDiv img {
-      height: 50px;
-      width: auto;
-      padding-right: 25px; }
+.itemCatalogo:hover {
+  transform: scale(1.05); }
 
 .bodyLogin {
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  background-image: url("../images/paisaje.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px); }
   .bodyLogin .formularioLogin {
-    width: 300px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.801);
     align-items: center;
-    justify-content: center; }
-    .bodyLogin .formularioLogin div {
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    border-color: #d4b5a8; }
+    .bodyLogin .formularioLogin .formularioLoginDiv {
+      margin: 40px; }
+      .bodyLogin .formularioLogin .formularioLoginDiv div {
+        width: 300px;
+        display: flex;
+        justify-content: space-between; }
+        .bodyLogin .formularioLogin .formularioLoginDiv div label {
+          color: #fff6e6; }
+        .bodyLogin .formularioLogin .formularioLoginDiv div .marginItemsForm {
+          margin-bottom: 30px; }
+      .bodyLogin .formularioLogin .formularioLoginDiv .botonesLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; }
+  .bodyLogin .titulo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 18%;
+    top: 10%;
+    height: 150px; }
+    .bodyLogin .titulo img {
+      width: 150px; }
+    .bodyLogin .titulo div {
       display: flex;
-      justify-content: space-between; }
-      .bodyLogin .formularioLogin div .marginItemsForm {
-        margin-bottom: 30px; }
-    .bodyLogin .formularioLogin .botonesLogin {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around; }
+      flex-direction: column;
+      justify-content: end;
+      height: 100%;
+      text-align: left;
+      margin-left: 25px;
+      padding-bottom: 30px; }
+      .bodyLogin .titulo div h1 {
+        font-size: 2.9em; }
+      .bodyLogin .titulo div p {
+        font-size: 1em; }
 
 .principalBody {
   display: grid;
@@ -156,8 +183,8 @@
   .mainPrincipal div {
     display: flex; }
     .mainPrincipal div a:nth-child(2) {
-      margin-left: 150px;
-      margin-right: 150px; }
+      margin-left: 120px;
+      margin-right: 120px; }
     .mainPrincipal div a {
       margin-top: 80px; }
 
@@ -191,28 +218,68 @@
       border-radius: 3px; }
 
 .bodyCrearIncidente {
-  text-align: center; }
-  .bodyCrearIncidente h1 {
-    margin-top: 120px; }
-  .bodyCrearIncidente p {
-    margin-top: 5px; }
-  .bodyCrearIncidente form {
-    margin-top: 100px;
+  color: black; }
+
+.loading-container {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.dots {
+  display: inline-block;
+  margin-left: 5px; }
+
+.dots::after {
+  content: '';
+  animation: dots 3s steps(4, end) infinite; }
+
+@keyframes dots {
+  0%, 20% {
+    content: ''; }
+  40% {
+    content: '.'; }
+  60% {
+    content: '..'; }
+  80%, 100% {
+    content: '...'; } }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black; }
+  .header .headerDiv {
+    width: 90%;
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
-    .bodyCrearIncidente form input {
-      margin-top: 30px; }
-    .bodyCrearIncidente form .inputResumen {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      width: 350px;
-      height: fit-content; }
-    .bodyCrearIncidente form textarea {
-      margin-top: 15px;
-      resize: none;
-      overflow: auto;
-      width: 350px;
-      height: 300px;
-      padding: 10px; }
+    .header .headerDiv span {
+      height: 45px;
+      border-color: #8d8d8d;
+      margin-left: 20px;
+      width: 2px; }
+    .header .headerDiv .titulo {
+      margin-left: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header .headerDiv .headerNav {
+      display: flex;
+      transition: transform 0.3s ease; }
+      .header .headerDiv .headerNav li:first-child {
+        margin-right: 60px; }
+      .header .headerDiv .headerNav li {
+        transition: transform 0.3s ease, color 0.3s ease; }
+      .header .headerDiv .headerNav li:hover {
+        transform: scale(1.05);
+        color: orange !important; }
+    .header .headerDiv .imagenHeader {
+      height: 50px;
+      width: auto;
+      padding-right: 25px; }
+    .header .headerDiv .imagenLogout {
+      height: 35px; }
