@@ -1,4 +1,4 @@
-<a href="" class="itemCatalogo border">
+<a href="/php/incidentes/consolaIncidentes.php" class="itemCatalogo border">
     <img src="../images/usuario.png" alt="Logo Mis Incidentes">
     <div class="itemCatalogoTexto">
         <p class="negrita fontMediana">Consola de Incidentes</p>

@@ -1,0 +1,38 @@
+.tablaConsulta{
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: $grisOscuro2;
+    border-radius: 20px;
+    min-width: 1000px;
+    th, td:not(:last-child){
+      padding: 12px 15px;
+      border: 1px solid #000000;
+      color: $grisOscuro2;
+      background-color: $blancoOscuro;
+      a{
+        color: $grisOscuro2;
+      }
+    }
+  
+    th {
+      color: $grisOscuro2;
+      font-weight: bold;
+    }
+}
+
+.enProceso{
+  background-color: $colorAcento;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  color: $grisOscuro2;
+
+}
+.finalizado{
+  background-color: $colorSecundario;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  color: $grisOscuro2;
+}

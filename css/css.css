@@ -7,7 +7,7 @@
   color: whitesmoke;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-main {
+body {
   background-color: #31363b; }
 
 header {
@@ -21,16 +21,6 @@ header {
 .negrita {
   font-weight: bolder; }
 
-.mensajeError {
-  font-size: 1.2em;
-  color: red;
-  font-weight: bolder; }
-
-.mensajeNotificacion {
-  font-size: 1.2em;
-  color: #cab45c;
-  font-weight: bolder; }
-
 .fontMediana {
   font-size: 1.2em; }
 
@@ -42,20 +32,6 @@ header {
 
 .fontChica {
   font-size: 0.8em; }
-
-.botonLogin {
-  padding: 5px;
-  width: auto;
-  min-width: 100px;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 3px;
-  cursor: pointer;
-  color: black; }
-
-.input {
-  color: black;
-  padding: 5px; }
 
 .fontAclaratoria {
   opacity: 0.9;
@@ -85,6 +61,60 @@ header {
 
 .maxWidth {
   max-width: 1820px; }
+
+.padding10px {
+  padding: 10px; }
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.buttonIncidente {
+  width: 250px;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; }
+
+.buttonIncidente:hover {
+  background-color: #b97900;
+  transform: scale(1.03); }
+
+.input {
+  color: black;
+  padding: 5px; }
+
+.botonLogin {
+  padding: 5px;
+  width: auto;
+  min-width: 100px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  color: black; }
+
+.mensajeError {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bolder; }
+
+.mensajeNotificacion {
+  font-size: 1.2em;
+  color: #cab45c;
+  font-weight: bolder; }
 
 .itemCatalogo {
   background-color: #b97900;
@@ -126,7 +156,7 @@ header {
   background-repeat: no-repeat;
   backdrop-filter: blur(3px); }
   .bodyLogin .formularioLogin {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(255, 255, 255, 0.24);
     align-items: center;
     justify-content: center;
     border-radius: 5px;
@@ -217,8 +247,61 @@ header {
       border: 1px solid black;
       border-radius: 3px; }
 
-.bodyCrearIncidente {
-  color: black; }
+.bodyCrearIncidente:last-child main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; }
+  .bodyCrearIncidente:last-child main .tituloCrearIncidente {
+    width: 70%; }
+    .bodyCrearIncidente:last-child main .tituloCrearIncidente article {
+      background-color: #699438;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      border-radius: 3px;
+      min-width: 1023px; }
+      .bodyCrearIncidente:last-child main .tituloCrearIncidente article img {
+        position: relative;
+        width: 120px;
+        background-color: #e9e9e9;
+        margin-top: 80px;
+        margin-left: 50px;
+        padding: 18px;
+        border-radius: 5px; }
+      .bodyCrearIncidente:last-child main .tituloCrearIncidente article h1 {
+        margin-left: 35px; }
+  .bodyCrearIncidente:last-child main .seccionCreacion {
+    width: 50%;
+    min-width: 1023px;
+    margin-top: 100px; }
+    .bodyCrearIncidente:last-child main .seccionCreacion form {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%; }
+      .bodyCrearIncidente:last-child main .seccionCreacion form label {
+        margin-top: 10px; }
+      .bodyCrearIncidente:last-child main .seccionCreacion form textarea {
+        resize: none;
+        overflow: auto;
+        color: black;
+        background-color: #e9e9e9;
+        border-radius: 5px; }
+      .bodyCrearIncidente:last-child main .seccionCreacion form select {
+        color: black;
+        background-color: #e9e9e9;
+        border-radius: 5px; }
+        .bodyCrearIncidente:last-child main .seccionCreacion form select option {
+          color: black;
+          padding: 10px; }
+      .bodyCrearIncidente:last-child main .seccionCreacion form .subcategoria {
+        color: black;
+        background-color: #e9e9e9;
+        border-radius: 5px; }
+      .bodyCrearIncidente:last-child main .seccionCreacion form div {
+        width: 100%;
+        text-align: center; }
 
 .loading-container {
   font-size: 24px;
@@ -283,3 +366,53 @@ header {
       padding-right: 25px; }
     .header .headerDiv .imagenLogout {
       height: 35px; }
+
+.creacionExitosa {
+  margin-bottom: 300px; }
+  .creacionExitosa h1 {
+    margin-bottom: 15px;
+    color: #b97900;
+    font-size: 2.5em; }
+  .creacionExitosa p {
+    margin-bottom: 35px;
+    font-weight: bolder;
+    color: #cab45c; }
+
+.tablaConsulta {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  color: #333333;
+  border-radius: 20px;
+  min-width: 1000px; }
+  .tablaConsulta th, .tablaConsulta td:not(:last-child) {
+    padding: 12px 15px;
+    border: 1px solid #000000;
+    color: #333333;
+    background-color: #e9e9e9; }
+    .tablaConsulta th a, .tablaConsulta td:not(:last-child) a {
+      color: #333333; }
+  .tablaConsulta th {
+    color: #333333;
+    font-weight: bold; }
+
+.enProceso {
+  background-color: #cab45c;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  color: #333333; }
+
+.finalizado {
+  background-color: #699438;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  color: #333333; }
+
+.mainConsolaIncidentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainConsolaIncidentes div {
+    width: 70%; }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ResolvIT</title>
         <link rel="stylesheet" href="/css/css.css">
-        <link rel="shortcut icon" href="images/servicio-al-cliente.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/soporte-tecnico.png" type="image/x-icon">
     </head>
     <body class="bodyLogin">
         <div class="titulo">
@@ -16,7 +16,7 @@
                 <p>El Gestor de Incidentes</p>
             </div>
         </div>
-        <form class="formularioLogin border" action="/php/usuario/validacionUsr.php" method="post">
+        <form class="formularioLogin border" action="validacionUsr.php" method="post">
             <div class="formularioLoginDiv">
                 <div>
                     <label class="marginItemsForm" for="usuario">Usuario</label>

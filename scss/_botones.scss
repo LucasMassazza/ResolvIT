@@ -1,0 +1,32 @@
+.buttonIncidente{
+    width: 250px;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.buttonIncidente:hover{
+    background-color: $naranjaOscuro;
+    transform: scale(1.03);
+}
+
+.input{
+    color: $negro;
+    padding: 5px;
+}
+
+.botonLogin{
+    padding: 5px;
+    width: auto;
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    color: $negro;
+}

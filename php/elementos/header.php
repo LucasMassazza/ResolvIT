@@ -5,7 +5,7 @@ error_reporting(0);
 <header class="header colorFondoHeader">
     <div class="headerDiv maxWidth">
         <div class="titulo">
-            <img class="imagenHeader" src="../../images/apoyo-tecnico.png" alt="Logo">
+            <a href="/php/principal.php"><img class="imagenHeader" src="../../images/apoyo-tecnico.png" alt="Logo"></a>
             <h3>Gestion de Incidentes y Solicitudes</h3>
             <span class="border"></span>
         </div>
