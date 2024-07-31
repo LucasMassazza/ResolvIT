@@ -3,20 +3,36 @@
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 18px;
-    text-align: left;
     color: $grisOscuro2;
-    border-radius: 20px;
     min-width: 1000px;
-    th, td:not(:last-child){
-      padding: 12px 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    .botonCancelar{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $rojo;
+    }
+    th, 
+    td:not(:nth-child(6)){
+      padding: 8px 10px;
       border: 1px solid #000000;
       color: $grisOscuro2;
       background-color: $blancoOscuro;
       a{
         color: $grisOscuro2;
       }
+      button{
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background-color: $blancoOscuro;
+      }
     }
-  
     th {
       color: $grisOscuro2;
       font-weight: bold;
@@ -28,6 +44,7 @@
   padding: 12px 15px;
   border: 1px solid #000000;
   color: $grisOscuro2;
+  font-weight: bolder;
 
 }
 .finalizado{
@@ -35,4 +52,22 @@
   padding: 12px 15px;
   border: 1px solid #000000;
   color: $grisOscuro2;
+  font-weight: bolder;
 }
+.asignado{
+  background-color: $colorPrincipal;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  color: $blancoOscuro;
+  font-weight: bolder;
+}
+.iconoEliminar{
+  height: 40px;
+  transition: transform 0.3s ease;
+  background-color: $blancoOscuro;
+}
+
+.iconoEliminar:hover{
+  transform: scale(1.15);
+}
+

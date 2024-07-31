@@ -39,10 +39,15 @@
             height: 50px;
             width: auto;
             padding-right: 25px;
+            
         }
+
         .imagenLogout{
             height: 35px;
-
+            transition: transform 0.3s ease;
+        }
+        .imagenLogout:hover{
+            transform: scale(1.12);
         }
     }
 }

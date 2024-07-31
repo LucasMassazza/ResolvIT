@@ -1,0 +1,44 @@
+.mainGestorUsuarios:not(:first-child){
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    div{
+        width: 70%;
+    }
+    .tablaUsuarios{
+        th, td:last-child{
+            background-color: $blancoOscuro;
+        }
+    }
+}
+.divGUTabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    h3{
+        margin-bottom: 10px;
+    }
+}
+.logoTablaUsr{
+    height: 40px;
+
+    transition: transform 0.3s ease;
+}
+.logoTablaUsr:hover{
+    transform: scale(1.15);
+}
+.buttonEliminarUsr{
+    background-color: $blancoOscuro;
+    border: none;
+    cursor: pointer;
+}
+
+.logoTablaUsuarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+}

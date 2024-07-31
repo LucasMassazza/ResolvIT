@@ -30,3 +30,41 @@
     cursor: pointer;
     color: $negro;
 }
+
+
+.botonesCrearUsuario {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Añade espacio entre los botones si es necesario */
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.buttonIncidenteDisable{
+    width: 250px;
+    color: $grisOscuro2;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    height: 60px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #ccc;
+}
+
+.buttonEditar{
+    width: 250px;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.buttonEditar:hover{
+    background-color: $naranjaOscuro;
+    transform: scale(1.03);
+}

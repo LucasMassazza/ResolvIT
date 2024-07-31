@@ -1,4 +1,4 @@
-$colorPrincipal: #004BA8;
+$colorPrincipal: #013d86;
 $colorSecundario: #699438;
 $colorFondo:#F2F2F2; 
 $colorTexto: black;
@@ -11,8 +11,10 @@ $negro: black;
 $letraLogin: rgb(255, 246, 230);
 $lineaLogin:rgb(212, 181, 168);
 $fondoLogin:rgba(255, 255, 255, 0.24);
-$blancoOscuro:rgb(233, 233, 233);
+$blancoOscuro:rgb(212, 212, 212);
 $grisOscuro2:rgb(51, 51, 51);
+$rojo: rgb(129, 2, 2);
+$finalizado:rgb(2, 109, 2);
 
 body{
     background-color: $grisClaro;
@@ -54,6 +56,9 @@ header{
 .marginBottom20px{
     margin-bottom: 20px;
 }
+.marginTop20px{
+    margin-top: 20px;
+}
 .border{
     border: 1px solid black;
 }
@@ -88,5 +93,13 @@ header{
     justify-content: center;
     align-items: center;
 }
-
-
+.marginBottom200px{
+    margin-bottom: 300px;
+    text-align: center;
+}
+.marginBottom40px{
+    margin-bottom: 40px
+}
+.marginTop300px{
+    margin-top: 300px;
+}

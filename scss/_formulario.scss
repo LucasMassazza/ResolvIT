@@ -1,0 +1,56 @@
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mainCrearUsuario:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: $blancoOscuro;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select,
+.form-group input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: $blancoOscuro;
+    color: $colorTexto;
+    font-size: 1.2em;
+    width: 1000px;
+    option{
+        color: $colorTexto;
+    }
+}
+
+.submitButton{
+    margin-top: 30px;
+    text-align: center;
+}
+
+

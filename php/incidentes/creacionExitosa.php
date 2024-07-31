@@ -11,7 +11,7 @@
     <?php include __DIR__.'/../elementos/header.php';?>
     <main class="creacionExitosa flexColumn">
         <h1>Se Genero el Incidente</h1>
-        <p>En la brevedad deberia contactarse por mail provisto el tecnico designado</p>
+        <p>En la brevedad deberia contactarse por mail el tecnico designado</p>
         <button class="buttonIncidente fontMediana" onclick="redirigirCrear()">Crear Otro</button>
         <button class="buttonIncidente fontMediana" onclick="redirigirInicio()">Volver al Inicio</button>
     </main>

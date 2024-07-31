@@ -6,10 +6,9 @@
         include 'consolaHerramental.php';
         include 'consolaIncidencias.php';
     }elseif($_SESSION['tipoUsuario']==1){
-        include 'consolaGestorUsuarios.php';
-        include 'consolaIncidencias.php';
+        include 'consolaIncidenciasTecnico.php';
     }elseif($_SESSION['tipoUsuario']==2){
-        include 'consolaIncidencias.php';
+        include 'consolaGestorUsuarios.php';
     }else{
 
     }

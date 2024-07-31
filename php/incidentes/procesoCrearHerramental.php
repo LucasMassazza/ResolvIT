@@ -3,17 +3,17 @@
     session_start();
     include 'conexionMysql.php';
     $id = intval($_SESSION['idUsuario']);
-    $nombre = $_SESSION['nombre'];
-    $apellido = $_SESSION['apellido'];
+    $nombre = mysqli_real_escape_string($conn, $_SESSION['nombre']);
+    $apellido = mysqli_real_escape_string($conn, $_SESSION['apellido']);
     $categoria = "Solicitud Herramental";
-    $subcategoria = $_POST['herramental'];
+    $subcategoria = mysqli_real_escape_string($conn, $_POST['herramental']);
     $fecha = date('Y/m/d');
-    $contacto = $_SESSION['mail'];
-    $justificacion = $_POST['justificacion'];
-        
-    $nombreCompleto = $nombre.' '.$apellido;
+    $contacto = mysqli_real_escape_string($conn, $_SESSION['mail']);
+    $justificacion = mysqli_real_escape_string($conn, $_POST['justificacion']);
+    $nombreCompleto = $nombre . ' ' . $apellido;
 
-    $query = "INSERT INTO `incidente`(`idUsuario` ,`nombre`, `categoria`, `subcategoria`, `date`, `contacto`, `descripcion`) VALUES ('$id','$nombreCompleto','$categoria','$subcategoria','$fecha','$contacto', '$justificacion')";
-    mysqli_query($conn,$query);
-    require 'creacionExitosa.php'
+    $query = "INSERT INTO incidente (idUsuario, nombre, categoria, subcategoria, date, contacto, descripcion) 
+              VALUES ('$id', '$nombreCompleto', '$categoria', '$subcategoria', '$fecha', '$contacto', '$justificacion')";
+    mysqli_query($conn, $query);
+    include 'creacionExitosa.php';
 ?>

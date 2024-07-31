@@ -12,14 +12,14 @@
     <main>
         <div class="tituloCrearIncidente">
             <article>
-                <img src="../../images/incidente.png" alt="Logo Incidente">
+                <img src="../../images/ordenador.png" alt="Logo Incidente">
                 <h1>Consola de Solicitante</h1>
             </article>
         </div>
         <div class="seccionCreacion">
             <div>
                 <h3>Crear Incidente</h3>
-                <p>Peticion Para</p>
+                <p>Para</p>
                 <?php require __DIR__.'/../elementos/obtencionNombre.php';?>
             </div>
             <span></span>
